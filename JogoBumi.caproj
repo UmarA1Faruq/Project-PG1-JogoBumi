@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>JogoBumi</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>26200</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="HomeAsset">
+            <object-type name="PlayBootom" sid="969776458172047">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="441018551446372">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="360063174144781" speed="5">
+                        <frame duration="1" hotspotX="0.500206" hotspotY="0.5" original-source="D:\Construct2\Bahan\Asset Home (5).png">
+                            <collision-poly>
+                                <point x="0.150555" y="0.146635" />
+                                <point x="0.499794" y="0.00200321" />
+                                <point x="0.84492" y="0.151042" />
+                                <point x="0.985191" y="0.5" />
+                                <point x="0.848211" y="0.852163" />
+                                <point x="0.499794" y="0.995994" />
+                                <point x="0.156726" y="0.847356" />
+                                <point x="0.0156314" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Exit" sid="979261790841414">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="704103915834280" speed="5">
+                        <frame duration="1" hotspotX="0.500208" hotspotY="0.5" original-source="D:\Construct2\Bahan\Asset Home copy.png">
+                            <collision-poly>
+                                <point x="0.147486" y="0.142228" />
+                                <point x="0.499792" y="0" />
+                                <point x="0.846282" y="0.148237" />
+                                <point x="0.987952" y="0.5" />
+                                <point x="0.84919" y="0.854567" />
+                                <point x="0.499792" y="0.995994" />
+                                <point x="0.154549" y="0.850962" />
+                                <point x="0.00623182" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgopening" sid="895984923624545">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="HomeScreen" sid="521946494839803">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="185661701827171" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Home Screen.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="jogobumi" sid="238922359556118">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="792614958576989">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="937412767251167">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="286695772764526" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\jogo-bumi.png">
+                            <collision-poly>
+                                <point x="0.190435" y="0.336923" />
+                                <point x="0.5" y="0.147692" />
+                                <point x="0.814348" y="0.328462" />
+                                <point x="0.843913" y="0.5" />
+                                <point x="0.834565" y="0.707308" />
+                                <point x="0.5" y="0.796923" />
+                                <point x="0.181739" y="0.678462" />
+                                <point x="0.151957" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Loading" sid="279224606017468">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="12" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="851505791404735" speed="5">
+                        <frame duration="1" hotspotX="0.500247" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054412_0000.png" />
+                        <frame duration="1" hotspotX="0.500247" hotspotY="0.501171" />
+                        <frame duration="1" hotspotX="0.500247" hotspotY="0.501171" />
+                        <frame duration="1" hotspotX="0.50043" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054437_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054459_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054519_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054545_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054611_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054626_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054643_0000.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AssetHome2" sid="837706773332867">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="827056025430704" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Asset Home (2).png">
+                            <collision-poly>
+                                <point x="0.1518" y="0.148638" />
+                                <point x="0.5" y="0" />
+                                <point x="0.847381" y="0.149439" />
+                                <point x="0.985679" y="0.5" />
+                                <point x="0.849836" y="0.852965" />
+                                <point x="0.5" y="0.995994" />
+                                <point x="0.159165" y="0.844151" />
+                                <point x="0.0192308" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="SetMenu">
+            <object-type name="Board" sid="323227874615468">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="226294144162744" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\Board.png">
+                            <collision-poly>
+                                <point x="0.108421" y="0.143056" />
+                                <point x="0.5" y="0.206944" />
+                                <point x="0.861053" y="0.183333" />
+                                <point x="0.889474" y="0.854167" />
+                                <point x="0.5" y="0.819444" />
+                                <point x="0.128421" y="0.830556" />
+                                <point x="0.136842" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ExitSetMenu" sid="141421091058220">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="879860818965013">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="415042017875664">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767913379993436" speed="5">
+                        <frame duration="1" hotspotX="0.500208" hotspotY="0.5" original-source="D:\Construct2\Bahan\Asset Home copy.png">
+                            <collision-poly>
+                                <point x="0.147486" y="0.142228" />
+                                <point x="0.499792" y="0" />
+                                <point x="0.846282" y="0.148237" />
+                                <point x="0.987952" y="0.5" />
+                                <point x="0.84919" y="0.854567" />
+                                <point x="0.499792" y="0.995994" />
+                                <point x="0.154549" y="0.850962" />
+                                <point x="0.00623182" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="jogobumi2" sid="679017814963657">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="279320706977679">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="802069130392670">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="475904818442235">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="988716265181631" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Construct2\Bahan\jogo-bumi.png">
+                            <collision-poly>
+                                <point x="0.190435" y="0.336923" />
+                                <point x="0.5" y="0.147692" />
+                                <point x="0.814348" y="0.328462" />
+                                <point x="0.843913" y="0.5" />
+                                <point x="0.834565" y="0.707308" />
+                                <point x="0.5" y="0.796923" />
+                                <point x="0.181739" y="0.678462" />
+                                <point x="0.151957" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-type name="Sprite" sid="834186972196922">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173814057713889" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DELL\Pictures\IMG_Download\pngwing.com.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="843892406273966">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="430064655975572" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="411695641147689">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Browser" sid="164722220386406">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Text" sid="625940483287073">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin" sid="229286428089555">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Function" sid="277902871290156">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="bgblur" sid="791427849022411">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="bgopening2" sid="934901029825231">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Loading2" sid="225801249412313">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="12" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="995868740827808" speed="5">
+                    <frame duration="1" hotspotX="0.500247" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054412_0000.png" />
+                    <frame duration="1" hotspotX="0.500247" hotspotY="0.501171" />
+                    <frame duration="1" hotspotX="0.500247" hotspotY="0.501171" />
+                    <frame duration="1" hotspotX="0.50043" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054437_0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054459_0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054519_0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054545_0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054611_0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501171" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054626_0000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501171" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054643_0000.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu_LO.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Menu_ES.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="7">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="8" />
+        <global-instance type="Function" uid="13" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

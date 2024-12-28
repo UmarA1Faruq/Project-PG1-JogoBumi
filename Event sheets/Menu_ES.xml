@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu_ES</name>
+    <events>
+        <variable constant="0" name="timerOpening" sid="962885786851354" static="0" type="number">0</variable>
+        <event-block sid="996379115950652">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="467491486739911" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="742913635857156" type="System">
+                    <param id="0" name="Layer">&quot;Opening&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="274400998883045" type="System">
+                    <param id="0" name="Layer">&quot;ObjMenu&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="619595532062461" type="System">
+                    <param id="0" name="Layer">&quot;BGMenu&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="729392578642976">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="888255095509129" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="267422846997916" type="System">
+                    <param id="0" name="Variable">timerOpening</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="769201266883557">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="805923739936069" type="System">
+                    <param id="0" name="Variable">timerOpening</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="803560340144680" type="System">
+                    <param id="0" name="Layer">&quot;Opening&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="140692631475984" type="System">
+                    <param id="0" name="Layer">&quot;ObjMenu&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="150285602255498" type="System">
+                    <param id="0" name="Layer">&quot;BGMenu&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="722721924570731">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="531275472244539" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="422703613394035" type="ExitSetMenu">
+                    <param id="0" name="Pin to">Board</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="639282140573926" type="jogobumi2">
+                    <param id="0" name="Pin to">Board</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="133889894756252" type="Text">
+                    <param id="0" name="Pin to">Board</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-2" name="Set Y" sid="335592183433208" type="Board">
+                    <param id="0" name="Y">Self.Y-700</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="652475025379984" type="System">
+                    <param id="0" name="Layer">&quot;SetMenu&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="399486310741166">
+            <conditions>
+                <condition id="0" name="On function" sid="117456120205844" type="Function">
+                    <param id="0" name="Name">&quot;set-in&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="706767502314936" type="Board">
+                    <param id="0" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="303995535996564" type="Board">
+                    <param id="0" name="X">Self.X</param>
+                </action>
+                <action id="-2" name="Set Y" sid="104905884876414" type="Board">
+                    <param id="0" name="Y">224</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="538599499001870">
+            <conditions>
+                <condition id="0" name="On function" sid="197495860036156" type="Function">
+                    <param id="0" name="Name">&quot;set-out&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="765087735475715" type="Board">
+                    <param id="0" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="436091602054239" type="Board">
+                    <param id="0" name="X">Self.X</param>
+                </action>
+                <action id="-2" name="Set Y" sid="620557862009187" type="Board">
+                    <param id="0" name="Y">-700</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="302349298919235">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="534351416037761" type="System">
+                    <param id="0" name="Layer">&quot;SetMenu&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="233519485873219">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="948892451143621" type="Touch">
+                            <param id="0" name="Object">ExitSetMenu</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="909519372618566" type="Function">
+                            <param id="0" name="Name">&quot;set-out&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="543432349771935" type="System">
+                            <param id="0" name="Layer">&quot;SetMenu&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="276570245055757">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="705823256836623" type="System">
+                    <param id="0" name="Layer">&quot;SetMenu&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="962255047822171">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="868649908174767" type="Touch">
+                            <param id="0" name="Object">AssetHome2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="659462181981632" type="System">
+                            <param id="0" name="Layer">&quot;SetMenu&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="882261565642472" type="Function">
+                            <param id="0" name="Name">&quot;set-in&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="319907533225207">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="503106740314811" type="Touch">
+                            <param id="0" name="Object">Exit</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Close" sid="717977533876767" type="Browser" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
